@@ -130,6 +130,7 @@
     <ClCompile Include="AddPhoneNumber.cpp" />
     <ClCompile Include="CheckUserInfo.cpp" />
     <ClCompile Include="DeletePhoneNumber.cpp" />
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Print(main).cpp" />
     <ClCompile Include="PrintPhoneDirectory.cpp" />
     <ClCompile Include="SortPhoneDirectorycpp.cpp" />
@@ -138,6 +139,7 @@
     <ClInclude Include="AddPhoneNumber.h" />
     <ClInclude Include="CheckUserInfo.h" />
     <ClInclude Include="DeletePhoneNumber.h" />
+    <ClInclude Include="Menu.h" />
     <ClInclude Include="PrintPhoneDirectory.h" />
     <ClInclude Include="SortPhoneDirectory.h" />
   </ItemGroup>

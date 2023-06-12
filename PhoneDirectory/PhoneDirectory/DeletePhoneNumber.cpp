@@ -1,7 +1,7 @@
 #include <string.h>
 
 #define NAMESIZE 30
-#define PHONESIZE 10
+#define PHONESIZE 11
 
 unsigned short int FindPhoneNumberIndex(char** PhoneDirectory, char PhoneNumber[], const int SIZE){
 	unsigned short int CountCorrectNumbers = 0, index = 0;

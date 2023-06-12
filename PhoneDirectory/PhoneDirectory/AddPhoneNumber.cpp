@@ -1,7 +1,7 @@
 #include <string.h>
 
 #define NAMESIZE 30
-#define PHONESIZE 10
+#define PHONESIZE 11
 
 char** AddPhoneNumber(char** PhoneDirectory, char name[], char PhoneNumber[], int* SIZE) {
 	*SIZE += 1;

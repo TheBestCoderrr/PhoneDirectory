@@ -1,7 +1,7 @@
 #include <string.h>
 
 #define NAMESIZE 30
-#define PHONESIZE 10
+#define PHONESIZE 11
 
 void CopyName(char** PhoneDirectory, char Name[], int index, const int SIZE) {
 	int j = 0;
