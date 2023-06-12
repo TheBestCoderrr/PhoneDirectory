@@ -1,8 +1,9 @@
 #include <iostream>
 #include <string.h>
 
-#include "AddPhoneNumber.h"
 #include "CheckUserInfo.h"
+#include "PrintPhoneDirectory.h"
+#include "AddPhoneNumber.h"
 #include "DeletePhoneNumber.h"
 
 #define NAMESIZE 30
@@ -20,15 +21,6 @@ void SetPhoneNumber(char PhoneNumber[]) {
 	cin.getline(PhoneNumber, PHONESIZE);
 }
 
-void PrintArr(char** PhoneDirectory, const int SIZE) {
-	for (int i = 0; i < SIZE; i++) {
-		for (int j = 0; j < strlen(PhoneDirectory[i]); j++)
-			cout << PhoneDirectory[i][j];
-		cout << endl;
-	}
-	cout << endl;
-}
-
 int main() {
 	int a = 0;
 	int* SIZE = &a;
@@ -37,19 +29,14 @@ int main() {
 
 	SetName(name);
 	SetPhoneNumber(PhoneNumber);
-
 	PhoneDirectory = AddPhoneNumber(PhoneDirectory, name, PhoneNumber, SIZE);
 
-	SetName(name);
-	SetPhoneNumber(PhoneNumber);
-	PhoneDirectory = AddPhoneNumber(PhoneDirectory, name, PhoneNumber, SIZE);
-	
 	//SetName(name);
 	SetPhoneNumber(PhoneNumber);
 	PhoneDirectory = DeletePhoneNumber(PhoneDirectory, PhoneNumber, SIZE);
 
 
 
-	PrintArr(PhoneDirectory, *SIZE);
+	PrintPhoneDirectory(PhoneDirectory, *SIZE);
 	delete[] PhoneDirectory;
 }

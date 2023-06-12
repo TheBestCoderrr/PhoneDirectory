@@ -27,6 +27,9 @@
     <ClCompile Include="CheckUserInfo.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="PrintPhoneDirectory.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AddPhoneNumber.h">
@@ -36,6 +39,9 @@
       <Filter>Исходные файлы</Filter>
     </ClInclude>
     <ClInclude Include="CheckUserInfo.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="PrintPhoneDirectory.h">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
   </ItemGroup>
