@@ -3,7 +3,7 @@
 #define NAMESIZE 30
 #define PHONESIZE 10
 
-unsigned short int FindUserIndex(char** PhoneDirectory, char PhoneNumber[], const int SIZE){
+unsigned short int FindPhoneNumberIndex(char** PhoneDirectory, char PhoneNumber[], const int SIZE){
 	unsigned short int CountCorrectNumbers = 0, index = 0;
 
 	for (int i = 0; i < SIZE; i++) {
@@ -25,7 +25,7 @@ unsigned short int FindUserIndex(char** PhoneDirectory, char PhoneNumber[], cons
 
 char** DeletePhoneNumber(char** PhoneDirectory, char PhoneNumber[], int* SIZE) {
 
-	unsigned short int UserIndex = FindUserIndex(PhoneDirectory, PhoneNumber, *SIZE);
+	unsigned short int UserIndex = FindPhoneNumberIndex(PhoneDirectory, PhoneNumber, *SIZE);
 
 	for (int i = UserIndex; i < *SIZE - 1; i++) {
 		for (int j = 0; j < strlen(PhoneDirectory[i]); j++) {

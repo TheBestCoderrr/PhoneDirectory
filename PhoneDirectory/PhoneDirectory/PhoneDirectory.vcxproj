@@ -132,12 +132,14 @@
     <ClCompile Include="DeletePhoneNumber.cpp" />
     <ClCompile Include="Print(main).cpp" />
     <ClCompile Include="PrintPhoneDirectory.cpp" />
+    <ClCompile Include="SortPhoneDirectorycpp.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AddPhoneNumber.h" />
     <ClInclude Include="CheckUserInfo.h" />
     <ClInclude Include="DeletePhoneNumber.h" />
     <ClInclude Include="PrintPhoneDirectory.h" />
+    <ClInclude Include="SortPhoneDirectory.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

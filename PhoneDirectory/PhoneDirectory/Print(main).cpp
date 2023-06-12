@@ -5,6 +5,7 @@
 #include "PrintPhoneDirectory.h"
 #include "AddPhoneNumber.h"
 #include "DeletePhoneNumber.h"
+#include "SortPhoneDirectory.h"
 
 #define NAMESIZE 30
 #define PHONESIZE 10
@@ -27,16 +28,6 @@ int main() {
 	char** PhoneDirectory = NULL;
 	char name[NAMESIZE], PhoneNumber[PHONESIZE];
 
-	SetName(name);
-	SetPhoneNumber(PhoneNumber);
-	PhoneDirectory = AddPhoneNumber(PhoneDirectory, name, PhoneNumber, SIZE);
-
-	//SetName(name);
-	SetPhoneNumber(PhoneNumber);
-	PhoneDirectory = DeletePhoneNumber(PhoneDirectory, PhoneNumber, SIZE);
-
-
-
-	PrintPhoneDirectory(PhoneDirectory, *SIZE);
+	
 	delete[] PhoneDirectory;
 }
