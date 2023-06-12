@@ -128,10 +128,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AddPhoneNumber.cpp" />
+    <ClCompile Include="CheckUserInfo.cpp" />
+    <ClCompile Include="DeletePhoneNumber.cpp" />
     <ClCompile Include="Print(main).cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AddPhoneNumber.h" />
+    <ClInclude Include="CheckUserInfo.h" />
+    <ClInclude Include="DeletePhoneNumber.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -2,6 +2,8 @@
 #include <string.h>
 
 #include "AddPhoneNumber.h"
+#include "CheckUserInfo.h"
+#include "DeletePhoneNumber.h"
 
 #define NAMESIZE 30
 #define PHONESIZE 10
@@ -37,7 +39,16 @@ int main() {
 	SetPhoneNumber(PhoneNumber);
 
 	PhoneDirectory = AddPhoneNumber(PhoneDirectory, name, PhoneNumber, SIZE);
+
+	SetName(name);
+	SetPhoneNumber(PhoneNumber);
 	PhoneDirectory = AddPhoneNumber(PhoneDirectory, name, PhoneNumber, SIZE);
+	
+	//SetName(name);
+	SetPhoneNumber(PhoneNumber);
+	PhoneDirectory = DeletePhoneNumber(PhoneDirectory, PhoneNumber, SIZE);
+
+
 
 	PrintArr(PhoneDirectory, *SIZE);
 	delete[] PhoneDirectory;
